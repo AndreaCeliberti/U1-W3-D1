@@ -65,10 +65,22 @@ console.log("even numbers always even", numbersAddedFor);
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+// const frase = ["ciao", "mi", "chiamo", "andrea"];
+
+// console.log(frase.size);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const myNumbers = function () {
+  const oddNumbers = [];
+  for (let i = 1; i <= 99; i += 2) {
+    oddNumbers.push(i);
+  }
+  return oddNumbers;
+};
+const oddArray = myNumbers();
+console.log(oddArray);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
