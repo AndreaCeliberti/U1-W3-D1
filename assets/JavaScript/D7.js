@@ -66,7 +66,7 @@ console.log("even numbers always even", numbersAddedFor);
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 // const frase = ["ciao", "mi", "chiamo", "andrea"];
-
+String.length;
 // console.log(frase.size);
 
 /* ESERCIZIO 8 (forEach o for)
@@ -218,9 +218,22 @@ console.log(numbMovies);
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+function titleMovies(movies) {
+  return movies.map((movies) => movies.Title);
+}
+const titleList = titleMovies(movies);
+console.log("lista titoli", titleList);
+
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+function millenialMovies(movies) {
+  return movies.filter((movies) => movies.Year > 1999);
+}
+
+const afterDuemila = millenialMovies(movies);
+
+console.log(afterDuemila);
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
